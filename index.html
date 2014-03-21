@@ -2,26 +2,26 @@
 Google IO 2012/2013 HTML5 Slide Template
 
 Authors: Eric Bidelman <ebidel@gmail.com>
-         Luke Mahé <lukem@google.com>
+				 Luke Mahé <lukem@google.com>
 
 URL: https://code.google.com/p/io-2012-slides
 -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <!--This one seems to work all the time, but really small on ipad-->
-  <!--<meta name="viewport" content="initial-scale=0.4">-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" media="all" href="theme/css/default.css">
-  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
-  <script src="js/jquery.min.js"></script>
-  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<!--This one seems to work all the time, but really small on ipad-->
+	<!--<meta name="viewport" content="initial-scale=0.4">-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" media="all" href="theme/css/default.css">
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+	<base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+	<script src="js/jquery.min.js"></script>
+	<script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
 	<style>
 .livecontent-src {
 	width: 50%;
@@ -104,211 +104,197 @@ URL: https://code.google.com/p/io-2012-slides
 
 <slides class="layout-widescreen">
 
-  <slide class="logoslide nobackground">
-    <article class="flexbox vcenter">
-        <span><img src="images/harvard-logo.png"></span>
-    </article>
-  </slide>
+	<slide class="logoslide nobackground">
+		<article class="flexbox vcenter">
+				<span><img src="images/harvard-logo.png"></span>
+		</article>
+	</slide>
 
-  <slide class="title-slide segue nobackground">
-    <aside class="gdbar"><img src="images/harvard-logo.png"></aside>
-    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
-    <hgroup class="auto-fadein">
-      <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
-      <p data-config-presenter><!-- populated from slide_config.json --></p>
-    </hgroup>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>One way to make your application accessible</h2>
-    </hgroup>
-    <article>
-		<ul>
-			<li>Basic HTML</li>
-			<li>Simple layout</li>
-			<li>Forms-based interaction</li>
-			<li>No JavaScript</li>
-		</ul>
-    </article>
-  </slide>
-  
-  <slide>
-      <hgroup>
-        <h2>Accessibility for the static web</h2>
+	<slide class="title-slide segue nobackground">
+		<aside class="gdbar"><img src="images/harvard-logo.png"></aside>
+		<!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+		<hgroup class="auto-fadein">
+			<h1 data-config-title><!-- populated from slide_config.json --></h1>
+			<h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+			<p data-config-presenter><!-- populated from slide_config.json --></p>
+		</hgroup>
+	</slide>
+
+	<slide>
+			<hgroup>
+				<h2>Accessibility for the static web</h2>
 		<h3>Doing Nothing</h3>
-      </hgroup>
-	  <article>
-          <style>
-            input {
-              margin-left: 0.5em;
-              font-size: 100%;
-            }
-            select {
-              margin-left: 0.5em;
-              font-size: 100%;
-              vertical-align: middle;
-            }
-          </style>
-          <form style="border: 1px solid #696969; padding: 1em; margin-top: 1em;">
+			</hgroup>
+		<article>
+					<style>
+						input {
+							margin-left: 0.5em;
+							font-size: 100%;
+						}
+						select {
+							margin-left: 0.5em;
+							font-size: 100%;
+							vertical-align: middle;
+						}
+					</style>
+					<form style="border: 1px solid #696969; padding: 1em; margin-top: 1em;">
 
-            <p>
-              Enter your name:
-              <input type="text" id="username_bad">
-            </p>
+						<p>
+							Enter your name:
+							<input type="text" id="username_bad">
+						</p>
 			
 			<p>
 				<img src="images/tmyk.gif"/>
 			</p>
-            
+						
 			<p>
-              Choose your favorite color:
-              <select id="colorchoice_bad">
-                <option selected="">Red</option>
-                <option>Orange</option>
-                <option>Yellow</option>
-                <option>Green</option>
-                <option>Blue</option>
-                <option>Purple</option>
-                <option>Brown</option>
-                <option>Black</option>
-                <option>Gray</option>
-                <option>White</option>
-              </select>
-            </p>
-          
-            <p>
-              <input type="submit" style="width: 10em;">
-            </p>
+							Choose your favorite color:
+							<select id="colorchoice_bad">
+								<option selected="">Red</option>
+								<option>Orange</option>
+								<option>Yellow</option>
+								<option>Green</option>
+								<option>Blue</option>
+								<option>Purple</option>
+								<option>Brown</option>
+								<option>Black</option>
+								<option>Gray</option>
+								<option>White</option>
+							</select>
+						</p>
+					
+						<p>
+							<input type="submit" style="width: 10em;">
+						</p>
 
-            <p>Having trouble?
-               Click <a href="http://www.google.com/">here</a> for help
-            </p>
+						<p>Having trouble?
+							 Click <a href="http://www.google.com/">here</a> for help
+						</p>
 
-          </form>
-	  </article>
-  </slide>
-  
-  <slide>
-      <hgroup>
-        <h2>Accessibility for the static web</h2>
+					</form>
+		</article>
+	</slide>
+	
+	<slide>
+			<hgroup>
+				<h2>Accessibility for the static web</h2>
 		<h3>Doing Something</h3>
-      </hgroup>
-	  <article>
-          <style>
-            input {
-              margin-left: 0.5em;
-              font-size: 100%;
-            }
-            select {
-              margin-left: 0.5em;
-              font-size: 100%;
-              vertical-align: middle;
-            }
-          </style>
-		  <form style="border: 1px solid #696969; padding: 1em; margin-top: 1em;">
+			</hgroup>
+		<article>
+					<style>
+						input {
+							margin-left: 0.5em;
+							font-size: 100%;
+						}
+						select {
+							margin-left: 0.5em;
+							font-size: 100%;
+							vertical-align: middle;
+						}
+					</style>
+			<form style="border: 1px solid #696969; padding: 1em; margin-top: 1em;">
 
-            <p>
-              <label for="username">Enter your name:</label>
-              <input type="text" id="username">
-            </p>
+						<p>
+							<label for="username">Enter your name:</label>
+							<input type="text" id="username">
+						</p>
 
 			<p>
 				<img src="images/tmyk.gif" alt="The More You Know text. With a star underneath that flies away and explodes.">
 			</p>
 
-            <p>
-              <label for="colorchoice">Choose your favorite color:</label>
-              <select id="colorchoice">
-                <option selected="">Red</option>
-                <option>Orange</option>
-                <option>Yellow</option>
-                <option>Green</option>
-                <option>Blue</option>
-                <option>Purple</option>
-                <option>Brown</option>
-                <option>Black</option>
-                <option>Gray</option>
-                <option>White</option>
-              </select>
-            </p>
-          
-            <p>
-              <input type="submit" style="width: 10em;">
-            </p>
+						<p>
+							<label for="colorchoice">Choose your favorite color:</label>
+							<select id="colorchoice">
+								<option selected="">Red</option>
+								<option>Orange</option>
+								<option>Yellow</option>
+								<option>Green</option>
+								<option>Blue</option>
+								<option>Purple</option>
+								<option>Brown</option>
+								<option>Black</option>
+								<option>Gray</option>
+								<option>White</option>
+							</select>
+						</p>
+					
+						<p>
+							<input type="submit" style="width: 10em;">
+						</p>
 
-            <p>Having trouble?
-               <a href="http://www.google.com/">Click here for help</a>
-            </p>
+						<p>Having trouble?
+							 <a href="http://www.google.com/">Click here for help</a>
+						</p>
 
-          </form>
-	  </article>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>What did we have to do?</h2>
-    </hgroup>
-    <article>
+					</form>
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+			<h2>What did we have to do?</h2>
+		</hgroup>
+		<article>
 		<ul>
 			<li>Add labels to form elements</li>
 			<li>Add alt attributes to images</li>
 		</ul>
-    </article>
-  </slide>
+		</article>
+	</slide>
 
-  <slide>
-    <hgroup>
-      <h2>HTML5: A bad accessible experience</h2>
-    </hgroup>
-    <article>
-      <iframe data-src="lunch_notax.html"></iframe>
-    </article>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>What Went Wrong?</h2>
-    </hgroup>
-    <article>
+	<slide>
+		<hgroup>
+			<h2>HTML5: A bad accessible experience</h2>
+		</hgroup>
+		<article>
+			<iframe data-src="lunch_notax.html"></iframe>
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+			<h2>What Went Wrong?</h2>
+		</hgroup>
+		<article>
 		<ul>
 			<li>Poor Focus Management</li>
 			<li>No Keyboard Commands</li>
 			<li>Unusable Custom Controls</li>
 			<li>The user doesn't know when things change on the page</li>
 		</ul>
-    </article>
-  </slide>
+		</article>
+	</slide>
 
-  <slide>
-    <hgroup>
-      <h2>Overview</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Legal Responsibility</li>
-        <li>Accessibility is Easy</li>
-        <li>Auditing</li>
-        <li>Usability</li>
-        <li>What is Harvard Doing?</li>
-        <li>Questions</li>
-      </ul>
-    </article>
-  </slide>
+	<slide>
+		<hgroup>
+			<h2>Overview</h2>
+		</hgroup>
+		<article>
+			<ul>
+				<li>Legal Responsibility</li>
+				<li>Accessibility is Easy</li>
+				<li>Auditing</li>
+				<li>Usability</li>
+				<li>What is Harvard Doing?</li>
+				<li>Questions</li>
+			</ul>
+		</article>
+	</slide>
 
-  <slide class="segue dark nobackground">
-    <hgroup class="auto-fadein">
-      <h2>Legal Responsibility</h2>
-      <h3>Section 508</h3>
-    </hgroup>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>Section 508</h2>
-    </hgroup>
-    <article>
+	<slide class="segue dark nobackground">
+		<hgroup class="auto-fadein">
+			<h2>Legal Responsibility</h2>
+			<h3>Section 508</h3>
+		</hgroup>
+	</slide>
+	
+	<slide>
+		<hgroup>
+			<h2>Section 508</h2>
+		</hgroup>
+		<article>
 		<ul class="build">
 			<li><p class="build">Who does this apply to?</p>
 				<ul class="build">
@@ -323,25 +309,25 @@ URL: https://code.google.com/p/io-2012-slides
 				</ul>
 			</li>
 		</ul>
-    </article>
-  </slide>
+		</article>
+	</slide>
 
-  <slide>
-    <hgroup>
-      <h2>Section 503</h2>
-    </hgroup>
-    <article>
+	<slide>
+		<hgroup>
+			<h2>Section 503</h2>
+		</hgroup>
+		<article>
 		<ul class="build">
 
 		</ul>
-    </article>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>Section 508</h2>
-    </hgroup>
-    <article>
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+			<h2>Section 508</h2>
+		</hgroup>
+		<article>
 		<ul class="build">
 			<li>(i) frames</li>
 			<li>(j) blinking</li>
@@ -356,14 +342,14 @@ URL: https://code.google.com/p/io-2012-slides
 			<li>(o) skipping navigation</li>
 			<li>(p) timing</li>
 		</ul>
-    </article>
-  </slide>
+		</article>
+	</slide>
 
-  <slide>
-    <hgroup>
-      <h2>Standards</h2>
-    </hgroup>
-    <article>
+	<slide>
+		<hgroup>
+			<h2>Standards</h2>
+		</hgroup>
+		<article>
 		<ul class="build">
 			<li>Bobby Approved
 				<ul class="build fade">
@@ -381,58 +367,58 @@ URL: https://code.google.com/p/io-2012-slides
 				</ul>
 			</li>
 		</ul>
-    </article>
-  </slide>
-  
-  <slide class="segue dark nobackground">
-    <hgroup class="auto-fadein">
-      <h2>Coding accessible HTML5</h2>
-    </hgroup>
-  </slide>
+		</article>
+	</slide>
+	
+	<slide class="segue dark nobackground">
+		<hgroup class="auto-fadein">
+			<h2>Coding accessible HTML5</h2>
+		</hgroup>
+	</slide>
 
-  <slide>
-    <hgroup>
-      <h2>Accessible HTML5 Overview</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Use clean HTML and standard tags whenever possible</li>
-        <li>Manage focus</li>
-        <li>Add key handlers</li>
-        <li>Add ARIA for screen readers</li>
-      </ul>
-    </article>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>Use clean HTML and standard tags</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Use CSS for layout, make sure DOM is in logical order</li>
-        <li>Don't use generic div or span when there's another HTML tag that's more semantically appropriate!<br><br>
+	<slide>
+		<hgroup>
+			<h2>Accessible HTML5 Overview</h2>
+		</hgroup>
+		<article>
+			<ul>
+				<li>Use clean HTML and standard tags whenever possible</li>
+				<li>Manage focus</li>
+				<li>Add key handlers</li>
+				<li>Add ARIA for screen readers</li>
+			</ul>
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+			<h2>Use clean HTML and standard tags</h2>
+		</hgroup>
+		<article>
+			<ul>
+				<li>Use CSS for layout, make sure DOM is in logical order</li>
+				<li>Don't use generic div or span when there's another HTML tag that's more semantically appropriate!<br><br>
 			<pre class="prettyprint" data-lang="html">
-				&lt;span onclick=""&gt;...  ⇒  &lt;a href=""&gt;...
-				&lt;div onclick=""&gt;...   ⇒  &lt;button onclick=""&gt;...</pre>
+				&lt;span onclick=""&gt;...	⇒	&lt;a href=""&gt;...
+				&lt;div onclick=""&gt;...	 ⇒	&lt;button onclick=""&gt;...</pre>
 		</li>
-        <li>Label images and form controls<br><br>
+				<li>Label images and form controls<br><br>
 			<pre class="prettyprint" data-lang="html">
 				&lt;img src="chart.png" alt="(description)"&gt;
 
 				&lt;label for="firstname"&gt;First name:&lt;label&gt;
 				&lt;input type="text" id="firstname"/&gt;</pre>
 		</li>
-      </ul>
-    </article>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>Managing Focus</h2>
-    </hgroup>
-    <article>
-      <ul>
+			</ul>
+		</article>
+	</slide>
+	
+	<slide>
+		<hgroup>
+			<h2>Managing Focus</h2>
+		</hgroup>
+		<article>
+			<ul>
 		<li>Make custom interactive elements focusable with <code>tabindex:</code><br><br>
 			<pre class="prettyprint" data-lang="html">
 				&lt;!-- Natural tab order --&gt;
@@ -446,36 +432,36 @@ URL: https://code.google.com/p/io-2012-slides
 			</pre>
 		</li>
 		<li>Proactively place focus with <code>element.focus()</code> to create an effcient workflow.</li>
-      </ul>
-    </article>
-  </slide>
+			</ul>
+		</article>
+	</slide>
 
-  <slide>
-    <hgroup>
-      <h2>Add key handlers</h2>
-    </hgroup>
-    <article>
+	<slide>
+		<hgroup>
+			<h2>Add key handlers</h2>
+		</hgroup>
+		<article>
 		<p>Custom controls should respond to keys like Enter, Space, Arrows, Escape, etc. as appropriate</p>
 		<pre class="prettyprint" data-lang="html/javascript">
 			&lt;div id="reply_icon"
-			     tabindex="0"
-			     onclick="reply()"
-			     onkeydown="return onReplyKeydown(event)"&gt;Reply&lt;/div&gt;
+					 tabindex="0"
+					 onclick="reply()"
+					 onkeydown="return onReplyKeydown(event)"&gt;Reply&lt;/div&gt;
 
 			&lt;script&gt;
-			  function onReplyKeydown(event) {
-			    if (event.keyCode == 32 || event.keyCode == 13)  // Space / Enter
-			      reply();
-			  }
+				function onReplyKeydown(event) {
+					if (event.keyCode == 32 || event.keyCode == 13)	// Space / Enter
+						reply();
+				}
 			&lt;/script&gt;</pre>
-    </article>
-  </slide>
+		</article>
+	</slide>
 
-  <slide>
-    <hgroup>
-      <h2>Add ARIA for screen readers</h2>
-    </hgroup>
-    <article>
+	<slide>
+		<hgroup>
+			<h2>Add ARIA for screen readers</h2>
+		</hgroup>
+		<article>
 		<li>ARIA attributes provide semantic information to screen readers that is normally conveyed visually</li>
 		<li>Use the ARIA <code>role</code> attribute to indicate that a generic tag is playing the role of a standard widget, like a button:<br><br>
 			<pre class="prettyprint" data-lang="html">
@@ -484,11 +470,11 @@ URL: https://code.google.com/p/io-2012-slides
 		<li>Use ARIA states and properties to add dynamic information about the current state of an element<br><br>
 			<pre class="prettyprint" data-lang="html">
 				&lt;div tabindex="0" role="checkbox" aria-checked="true"&gt;
-				  Include attachments
+					Include attachments
 				&lt;/div&gt;</pre>
 		</li>
-    </article>
-  </slide>
+		</article>
+	</slide>
 
 
 	<slide>
@@ -546,38 +532,38 @@ Send
 <pre id="customtoggle_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
 &lt;script&gt;
 function toggle() {
-  var b = $('#tb');
-  if (b.hasClass('toggled')) {
-    b.removeClass('toggled');
-  } else {
-    b.addClass('toggled');
-  }
+	var b = $('#tb');
+	if (b.hasClass('toggled')) {
+		b.removeClass('toggled');
+	} else {
+		b.addClass('toggled');
+	}
 }
 &lt;/script&gt;
 
 &lt;div id="tb"
-     class="togglebutton"
-     onclick="toggle()"&gt;
-  Toggle
+		 class="togglebutton"
+		 onclick="toggle()"&gt;
+	Toggle
 &lt;/div&gt;</pre>
 
 <pre id="customtoggle_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;script&gt;
 function toggle() {
-  var b = $('#tb');
-  if (b.hasClass('toggled')) {
-    b.removeClass('toggled');
-    b.attr('aria-pressed', false);
-  } else {
-    b.addClass('toggled');
-    b.attr('aria-pressed', true);
-  }
+	var b = $('#tb');
+	if (b.hasClass('toggled')) {
+		b.removeClass('toggled');
+		b.attr('aria-pressed', false);
+	} else {
+		b.addClass('toggled');
+		b.attr('aria-pressed', true);
+	}
 }
 &lt;/script&gt;
 &lt;div id="tb" class="togglebutton"
-  tabindex="0" role="button"
-  onkeypress="onclick()"
-  onclick="toggle()"&gt;
+	tabindex="0" role="button"
+	onkeypress="onclick()"
+	onclick="toggle()"&gt;
 Toggle&lt;/div&gt;</pre>
 
 	<div class="livecontent-embed-container" style="">
@@ -606,26 +592,26 @@ Toggle&lt;/div&gt;</pre>
 
 <pre id="status_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
 &lt;p&gt;
-  Click to begin calculation:
+	Click to begin calculation:
 &lt;/p&gt;
 &lt;button onclick="calculate()"&gt;
-  Calculate
+	Calculate
 &lt;/button&gt;
 
 &lt;div id="status"&gt;
-  Status goes here.
+	Status goes here.
 &lt;/div&gt;</pre>
 
 <pre id="status_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;p&gt;
-  Click to begin calculation:
+	Click to begin calculation:
 &lt;/p&gt;
 &lt;button onclick="calculate()"&gt;
-  Calculate
+	Calculate
 &lt;/button&gt;
 
 &lt;div id="status" aria-live="polite"&gt;
-  Status goes here.
+	Status goes here.
 &lt;/div&gt;</pre>
 
 	<div class="livecontent-embed-container" style="">
@@ -662,23 +648,23 @@ Toggle&lt;/div&gt;</pre>
 
 <pre id="star_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
 &lt;p&gt;
-  Rate from 1 to 5 stars:
+	Rate from 1 to 5 stars:
 &lt;/p&gt;
 &lt;div id="stars" class="star_rating"&gt;
-  &lt;span class="star_cancel"&gt;&lt;/span&gt;
-  &lt;span class="star_full"&gt;&lt;/span&gt;
-  &lt;span class="star_full"&gt;&lt;/span&gt;
-  &lt;span class="star_full"&gt;&lt;/span&gt;
-  &lt;span class="star_empty"&gt;&lt;/span&gt;
-  &lt;span class="star_empty"&gt;&lt;/span&gt;
-  &lt;span class="star_caption"&gt;
-    3 stars
-  &lt;/span&gt;
+	&lt;span class="star_cancel"&gt;&lt;/span&gt;
+	&lt;span class="star_full"&gt;&lt;/span&gt;
+	&lt;span class="star_full"&gt;&lt;/span&gt;
+	&lt;span class="star_full"&gt;&lt;/span&gt;
+	&lt;span class="star_empty"&gt;&lt;/span&gt;
+	&lt;span class="star_empty"&gt;&lt;/span&gt;
+	&lt;span class="star_caption"&gt;
+		3 stars
+	&lt;/span&gt;
 &lt;/div&gt;</pre>
 
 <pre id="star_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;p&gt;
-  Rate from 1 to 5 stars:
+	Rate from 1 to 5 stars:
 &lt;/p&gt;
 &lt;div id="stars" class="star_rating"
 tabindex="0"
@@ -687,15 +673,15 @@ aria-valuemin="0"
 aria-valuemax="5"
 aria-valuenow="3"
 aria-valuetext="3 stars"&gt;
-  &lt;span class="star_cancel"&gt;&lt;/span&gt;
-  &lt;span class="star_full"&gt;&lt;/span&gt;
-  &lt;span class="star_full"&gt;&lt;/span&gt;
-  &lt;span class="star_full"&gt;&lt;/span&gt;
-  &lt;span class="star_empty"&gt;&lt;/span&gt;
-  &lt;span class="star_empty"&gt;&lt;/span&gt;
-  &lt;span class="star_caption"&gt;
-    3 stars
-  &lt;/span&gt;
+	&lt;span class="star_cancel"&gt;&lt;/span&gt;
+	&lt;span class="star_full"&gt;&lt;/span&gt;
+	&lt;span class="star_full"&gt;&lt;/span&gt;
+	&lt;span class="star_full"&gt;&lt;/span&gt;
+	&lt;span class="star_empty"&gt;&lt;/span&gt;
+	&lt;span class="star_empty"&gt;&lt;/span&gt;
+	&lt;span class="star_caption"&gt;
+		3 stars
+	&lt;/span&gt;
 &lt;/div&gt;</pre>
 
 	<div class="livecontent-embed-container" style="">
@@ -713,56 +699,56 @@ aria-valuetext="3 stars"&gt;
 	});
 	</script>
 	<script>
-    // Star rating gadget
-    var starNames = {
-      0: 'No stars',
-      1: '1 star',
-      2: '2 stars',
-      3: '3 stars',
-      4: '4 stars',
-      5: '5 stars'
-    };
+		// Star rating gadget
+		var starNames = {
+			0: 'No stars',
+			1: '1 star',
+			2: '2 stars',
+			3: '3 stars',
+			4: '4 stars',
+			5: '5 stars'
+		};
 
-    function setstars(stars) {
-      var elems = $('#stars').children();
-      currentStars = stars;
-      for (var i = 1; i <= 5; i++) {
-        var elem = $(elems[i]);
-        if (stars >= i) {
+		function setstars(stars) {
+			var elems = $('#stars').children();
+			currentStars = stars;
+			for (var i = 1; i <= 5; i++) {
+				var elem = $(elems[i]);
+				if (stars >= i) {
 			elem.removeClass('star_empty');
-          	elem.addClass('star_full');
-        } else {
-            elem.removeClass('star_full');
-            elem.addClass('star_empty');
-        }
-      }
-      var cancel = $(elems[0]);
-      if (stars > 0) {
-        cancel.css('visibility', 'visible');
-      } else {
-        cancel.css('visibility', 'hidden');
-      }
-      var caption = $(elems[6]);
-      caption.text(starNames[stars]);
-      var stars_elem = $('#stars');
-      stars_elem.attr('aria-valuenow', stars);
-      //stars_elem.attr('aria-valuetext', starNames[stars]);
-    }
+						elem.addClass('star_full');
+				} else {
+						elem.removeClass('star_full');
+						elem.addClass('star_empty');
+				}
+			}
+			var cancel = $(elems[0]);
+			if (stars > 0) {
+				cancel.css('visibility', 'visible');
+			} else {
+				cancel.css('visibility', 'hidden');
+			}
+			var caption = $(elems[6]);
+			caption.text(starNames[stars]);
+			var stars_elem = $('#stars');
+			stars_elem.attr('aria-valuenow', stars);
+			//stars_elem.attr('aria-valuetext', starNames[stars]);
+		}
 
-    function starkey(event) {
-      if (event.keyCode == 37) {
-        if (currentStars > 0) {
-          setstars(currentStars - 1);
-        }
-        event.stopPropagation();
-      } else if (event.keyCode == 39) {
-        if (currentStars < 5) {
-          setstars(currentStars + 1);
-        }
-        event.stopPropagation();
-      }
-      return false;
-    }
+		function starkey(event) {
+			if (event.keyCode == 37) {
+				if (currentStars > 0) {
+					setstars(currentStars - 1);
+				}
+				event.stopPropagation();
+			} else if (event.keyCode == 39) {
+				if (currentStars < 5) {
+					setstars(currentStars + 1);
+				}
+				event.stopPropagation();
+			}
+			return false;
+		}
 
 	function initstar(stars, star) {
 		var elem = $(stars.children()[star]);
@@ -794,37 +780,37 @@ aria-valuetext="3 stars"&gt;
 <pre id="popup_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
 &lt;script&gt;
 function confirm() {
-  $('#modal_dialog').css('display', 'block');
+	$('#modal_dialog').css('display', 'block');
 }
 &lt;/script&gt;
 
 &lt;button onclick="confirm()"&gt;
-  Finish Brown Bag
+	Finish Brown Bag
 &lt;/button&gt;
 
 &lt;div id="modal_dialog" class="dialog"&gt;
-  &lt;p&gt;Are you sure you don't want to hear more?&lt;/p&gt;
-  &lt;button id="ok"&gt;End it&lt;/button&gt;
-  &lt;button id="cancel"&gt;Cancel&lt;/button&gt;
+	&lt;p&gt;Are you sure you don't want to hear more?&lt;/p&gt;
+	&lt;button id="ok"&gt;End it&lt;/button&gt;
+	&lt;button id="cancel"&gt;Cancel&lt;/button&gt;
 &lt;/div&gt;</pre>
 
 <pre id="popup_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;script&gt;
 function confirm() {
-  $('#modal_dialog').css('display', 'block');
-  $('#modal_dialog').focus();
+	$('#modal_dialog').css('display', 'block');
+	$('#modal_dialog').focus();
 }
 &lt;/script&gt;
 
 &lt;button onclick="confirm()"&gt;
-  Finish Brown Bag
+	Finish Brown Bag
 &lt;/button&gt;
 
 &lt;div id="modal_dialog" class="dialog"
-  tabindex="-1" role="dialog"&gt;
-  &lt;p&gt;Are you sure you don't want to hear more?&lt;/p&gt;
-  &lt;button id="ok"&gt;End it&lt;/button&gt;
-  &lt;button id="cancel"&gt;Cancel&lt;/button&gt;
+	tabindex="-1" role="dialog"&gt;
+	&lt;p&gt;Are you sure you don't want to hear more?&lt;/p&gt;
+	&lt;button id="ok"&gt;End it&lt;/button&gt;
+	&lt;button id="cancel"&gt;Cancel&lt;/button&gt;
 &lt;/div&gt;</pre>
 
 	<div class="livecontent-embed-container" style="">
@@ -840,44 +826,44 @@ function confirm() {
 			$('#popup_src2').toggle();
 		});
 		var lastFocus = $('#ok');
-		  var listener = function(e) {
-		    window.setTimeout(function() {
-		      if (e.target != $('#ok') &&
-		          e.target != $('#cancel')) {
-		        lastFocus.focus();
-		      } else {
-		        lastFocus = e.target;
-		      }
-		    }, 0);
-		  };
-		  $(document).bind(
-		      'focus', listener);
-		  $('#ok').bind(
-		      'click', function(e) {
-		        $('#modal_dialog').css('display', 'none');
-		        $(document).unbind(
-		            'focus');
-		      });
-		  $('#cancel').bind(
-		      'click', function(e) {
-		        $('#modal_dialog').css('display', 'none');
-		        $(document).unbind(
-		            'focus');
-		      });
+			var listener = function(e) {
+				window.setTimeout(function() {
+					if (e.target != $('#ok') &&
+							e.target != $('#cancel')) {
+						lastFocus.focus();
+					} else {
+						lastFocus = e.target;
+					}
+				}, 0);
+			};
+			$(document).bind(
+					'focus', listener);
+			$('#ok').bind(
+					'click', function(e) {
+						$('#modal_dialog').css('display', 'none');
+						$(document).unbind(
+								'focus');
+					});
+			$('#cancel').bind(
+					'click', function(e) {
+						$('#modal_dialog').css('display', 'none');
+						$(document).unbind(
+								'focus');
+					});
 	});
 	</script>
 
 		</article>
 	</slide>
 	
-    <slide>
-      <hgroup>
-        <h2>HTML5: A good accessible experience</h2>
-      </hgroup>
-      <article>
-        <iframe data-src="lunch_ax.html"></iframe>
-      </article>
-    </slide>
+		<slide>
+			<hgroup>
+				<h2>HTML5: A good accessible experience</h2>
+			</hgroup>
+			<article>
+				<iframe data-src="lunch_ax.html"></iframe>
+			</article>
+		</slide>
 	
 	<slide>
 		<hgroup>
@@ -902,15 +888,15 @@ function confirm() {
 						<li>Chrome</li>
 					</ul>
 				</li>
-        	</ul>
-      </article>
-    </slide>
+					</ul>
+			</article>
+		</slide>
 	
-    <slide class="segue dark nobackground">
-      <hgroup class="auto-fadein">
-        <h2>Auditing</h2>
-      </hgroup>
-    </slide>
+		<slide class="segue dark nobackground">
+			<hgroup class="auto-fadein">
+				<h2>Auditing</h2>
+			</hgroup>
+		</slide>
 
 	<slide>
 		<hgroup>
@@ -1034,18 +1020,18 @@ function confirm() {
 		</article>
 	</slide>
 	
-  <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/harvard-logo.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>A special thank you to: Curtis Wilcox, Ashley Cwikla, Michael Hilborn, Artie Barrett, and Shannon Rice</p>
-    </article>
-    <p class="auto-fadein" data-config-contact>
-      <!-- populated from slide_config.json -->
-    </p>
-  </slide>
+	<slide class="thank-you-slide segue nobackground">
+		<aside class="gdbar right"><img src="images/harvard-logo.png"></aside>
+		<article class="flexbox vleft auto-fadein">
+			<h2>&lt;Thank You!&gt;</h2>
+			<p>A special thank you to: Curtis Wilcox, Ashley Cwikla, Michael Hilborn, Artie Barrett, and Shannon Rice</p>
+		</article>
+		<p class="auto-fadein" data-config-contact>
+			<!-- populated from slide_config.json -->
+		</p>
+	</slide>
 
-  <slide class="backdrop"></slide>
+	<slide class="backdrop"></slide>
 
 </slides>
 
@@ -1055,15 +1041,15 @@ _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
 _gaq.push(['_trackPageview']);
 
 (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
 
 <!--[if IE]>
-  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-  <script>CFInstall.check({mode: 'overlay'});</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+	<script>CFInstall.check({mode: 'overlay'});</script>
 <![endif]-->
 </body>
 </html>

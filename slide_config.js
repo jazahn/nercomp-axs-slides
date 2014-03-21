@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Accessibility<br>in Education',
-    subtitle: 'with HTML5',
+    title: 'By the Way, <br>Accessibility',
+    //subtitle: '',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
