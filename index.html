@@ -418,6 +418,24 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 		</hgroup>
 		<article>
 		<ul class="build">
+			<li>(a) alt attributes</li>
+			<li>(b) captions</li>
+			<li>(c) color</li>
+			<li>(d) stylesheets</li>
+			<li>(e) image maps!</li>
+			<li>(f) seriously, image maps</li>
+			<li>(g) row/column headers</li>
+			<li>(h) data table cells</li>
+		</ul>
+		</article>
+	</slide>
+
+	<slide>
+		<hgroup>
+			<h2>Section 508</h2>
+		</hgroup>
+		<article>
+		<ul class="build">
 			<li>(i) frames</li>
 			<li>(j) blinking</li>
 			<li>(k) text only page
@@ -433,32 +451,19 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 		</ul>
 		</article>
 	</slide>
-
+	
 	<slide>
 		<hgroup>
-			<h2>Standards</h2>
+			<h2>The Future</h2>
 		</hgroup>
 		<article>
-		<ul class="build">
-			<li>Bobby Approved
-				<ul class="build fade">
-					<li>Where's Bobby?</li>
-					<li>'96 CAST</li>
-					<li>'04 Watchfire</li>
-					<li>'07 IBM</li>
-				</ul>
-			</li>
-			<li>WCAG 2.0
-				<ul class="build">
-					<li>A</li>
-					<li>AA</li>
-					<li>AAA</li>
-				</ul>
-			</li>
-		</ul>
+			<ul class="build">
+				<li>Section 508 is old</li>
+				<li>Can't ignore WCAG 2.0</li>
+				<li>WCAG 2.0 AA</li>
 		</article>
 	</slide>
-	
+
 	<slide class="segue dark nobackground">
 		<hgroup class="auto-fadein">
 			<h2>Coding accessible HTML5</h2>
@@ -945,22 +950,90 @@ function confirm() {
 		</article>
 	</slide>
 	
-		<slide>
-			<hgroup>
-				<h2>HTML5: A good accessible experience</h2>
-			</hgroup>
-			<article>
-				<iframe data-src="lunch_ax.html"></iframe>
-			</article>
-		</slide>
-	
 	<slide>
 		<hgroup>
-			<h2>Compatibility Note</h2>
-			<h3>A little bit about screenreaders</h3>
+			<h2>HTML5: A good accessible experience</h2>
+		</hgroup>
+		<article>
+			<iframe data-src="lunch_ax.html"></iframe>
+		</article>
+	</slide>
+	
+	<slide class="segue dark nobackground">
+		<hgroup class="auto-fadein">
+			<h2>Accessibility is Easy</h2>
+		</hgroup>
+	</slide>
+
+	<slide>
+		<hgroup>
+			<h2>Seriously</h2>
+		</hgroup>
+		<article>
+			<p>All of the other things developers have to worry about</p>
+			<ul>
+				<li>Security</li>
+				<li>API Development</li>
+				<li>Data Modeling</li>
+				<li>Responsive Design / Mobility</li>
+		</article>
+	</slide>
+
+	<slide>
+		<hgroup>
+			<h2>There's Not a Lot Here</h2>
+		</hgroup>
+		<article>
+			<p>What have I talked about?</p>
+			<ul>
+				<li>Some extra tags?</li>
+				<li>Some extra attributes?</li>
+				<li>A seriously small subset of HTML5?</li>
+		</article>
+	</slide>
+
+	<slide class="segue dark nobackground">
+		<hgroup class="auto-fadein">
+			<h2>Accessibility is UX</h2>
+		</hgroup>
+	</slide>
+
+	<slide>
+		<hgroup>
+			<h2>This is What People Want to Hear</h2>
 		</hgroup>
 		<article>
 			<ul class="build">
+				<li><code>&lt;label&gt;</code>
+					<p>
+						<label for="username2">Enter your name:</label>
+						<input type="text" id="username2">
+					</p>
+				</li>
+				<li>Focus Management is your Workflow</li>
+				<li>DOM order matters
+					<ul>
+						<li>Maintainability</li>
+						<li>Better practice is better for a reason</li>
+						<li>Simplify Simplify Simplify</li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+	</slide>
+
+	<slide class="segue dark nobackground">
+		<hgroup class="auto-fadein">
+			<h2>Testing</h2>
+		</hgroup>
+	</slide>
+
+	<slide>
+		<hgroup>
+			<h2>Screenreaders</h2>
+		</hgroup>
+		<article>
+			<ul>
 				<li>JAWS (and NVDA)
 					<ul>
 						<li>Firefox</li>
@@ -975,18 +1048,14 @@ function confirm() {
 				<li>ChromeVox
 					<ul>
 						<li>Chrome</li>
+						<li>Simplified</li>
+						<li>For Developers</li>
 					</ul>
 				</li>
-					</ul>
-			</article>
-		</slide>
+			</ul>
+		</article>
+	</slide>
 	
-		<slide class="segue dark nobackground">
-			<hgroup class="auto-fadein">
-				<h2>Auditing</h2>
-			</hgroup>
-		</slide>
-
 	<slide>
 		<hgroup>
 			<h2>Static Auditing</h2>
@@ -1006,7 +1075,7 @@ function confirm() {
 			<h2>Integrated Auditing</h2>
 		</hgroup>
 		<article>
-			<ul class="build">
+			<ul>
 				<li>Integrated Tools
 					<ul>
 						<li>Wave Toolbar (IE)</li>
@@ -1018,102 +1087,11 @@ function confirm() {
 			</ul>
 		</article>
 	</slide>
-	
-	<slide>
-		<hgroup>
-			<h2>Accessibility Working Group</h2>
-			<h3>Coming soon...</h3>
-		</hgroup>
-		<article>
-			<ul class="build">
-				<li>What you can expect:
-					<ul>
-						<li>Recommendations</li>
-						<li>Strategy!</li>
-					</ul>
-				</li>
-				<li>What you can hope for:
-					<ul>
-						<li>An official channel for getting help
-							<ul>
-								<li>Auditing your application</li>
-								<li>Fixing accessibility bugs</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</article>
-	</slide>
-	
-	<slide>
-		<hgroup>
-			<h2>What Good is this Brown Bag?</h2>
-		</hgroup>
-		<article>
-			<ul class="build">
-				<li>This wasn't for you!</li>
-				<li>But if you take nothing else away...
-					<ul>
-						<li>Standard tags</li>
-						<li>Descriptions</li>
-						<li>Focus</li>
-						<li>Just "unplug" your mouse</li>
-					</ul>
-				</li>
-				<li>Communicate
-					<ul>
-						<li>Work together</li>
-						<li>chat.huit.harvard.edu -> Accessibility</li>
-					</ul>
-				</li>
-			</ul>
-		</article>
-	</slide>
 
-	<slide>
-		<hgroup>
-			<h2>Side Note</h2>
-			<h3>There was more here than just accessibility</h3>
-		</hgroup>
-		<article>
-			<ul class="build">
-				<li>User Experience
-					<ul class="build">
-						<li>DOM order
-							<ul>
-								<li>Maintainability</li>
-								<li>Standards</li>
-							</ul>
-						</li>
-						<li>Keyboard Controls
-							<ul>
-								<li>Power Users</li>
-								<li>Lazy Users</li>
-							</ul>
-						</li>
-						<li>Focus
-							<ul>
-								<li>Power Users</li>
-								<li>Pleasant experience</li>
-							</ul>
-						</li>
-						<li>Labels
-							<ul>
-								<li>Increased clickable area</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</article>
-	</slide>
-	
 	<slide class="thank-you-slide segue nobackground">
 		<aside class="gdbar right"><img src="images/harvard-logo.png"></aside>
 		<article class="flexbox vleft auto-fadein">
 			<h2>&lt;Thank You!&gt;</h2>
-			<p>A special thank you to: Curtis Wilcox, Ashley Cwikla, Michael Hilborn, Artie Barrett, and Shannon Rice</p>
 		</article>
 		<p class="auto-fadein" data-config-contact>
 			<!-- populated from slide_config.json -->
