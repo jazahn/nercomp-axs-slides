@@ -587,23 +587,19 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 		<article>
 
 <pre id="custombutton_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
-&lt;p&gt;
-Click on this button:
-&lt;/p&gt;
+&lt;p&gt;Click on this button:&lt;/p&gt;
 &lt;div class="custombutton"
-onclick="alert('sent!')"&gt;
-Send
+    onclick="alert('sent!')"&gt;
+  Send
 &lt;/div&gt;</pre>
 
 <pre id="custombutton_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
-&lt;p&gt;
-Click on this button:
-&lt;/p&gt;
+&lt;p&gt;Click on this button:&lt;/p&gt;
 &lt;div class="custombutton" 
-tabindex="0" role="button" 
-onkeypress="onclick()"
-onclick="alert('sent!')"&gt;
-Send
+    tabindex="0" role="button" 
+    onkeypress="onclick()"
+    onclick="alert('sent!')"&gt;
+  Send
 &lt;/div&gt;</pre>
 
 
@@ -686,6 +682,9 @@ Toggle&lt;/div&gt;</pre>
 	</slide>
 
 	<slide>
+		<aside>
+			aria-live has 3 levels, polite, assertive, and rude. Polite will not interrupt anything currently being spoken.
+		</aside>
 		<hgroup>
 			<h2>Example 3: Status Indicator</h2>
 		</hgroup>
@@ -693,26 +692,26 @@ Toggle&lt;/div&gt;</pre>
 
 <pre id="status_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
 &lt;p&gt;
-	Click to begin calculation:
+  Click to begin calculation:
 &lt;/p&gt;
 &lt;button onclick="calculate()"&gt;
-	Calculate
+  Calculate
 &lt;/button&gt;
 
 &lt;div id="status"&gt;
-	Status goes here.
+  Status goes here.
 &lt;/div&gt;</pre>
 
 <pre id="status_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;p&gt;
-	Click to begin calculation:
+  Click to begin calculation:
 &lt;/p&gt;
 &lt;button onclick="calculate()"&gt;
-	Calculate
+  Calculate
 &lt;/button&gt;
 
 &lt;div id="status" aria-live="polite"&gt;
-	Status goes here.
+  Status goes here.
 &lt;/div&gt;</pre>
 
 	<div class="livecontent-embed-container" style="">
