@@ -395,6 +395,9 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 
 	<slide>
+		<aside class="note">
+			You're not going to get anyone who is an expert in all things accessibility. In order to really get web accessibility, you need to have a reasonably full set of web development skills.
+		</aside>
 		<hgroup>
 			<h2>What about the other sections?</h2>
 			<h3></h3>
@@ -453,6 +456,12 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 	
 	<slide>
+		<aside class="note">
+			<ul>
+				<li>Section 508 is under review / rewrite / update.</li>
+				<li>It is expected that this will end up with 508 resembling WCAG 2.0 AA</li>
+			</ul>
+		</aside>
 		<hgroup>
 			<h2>The Future</h2>
 		</hgroup>
@@ -626,38 +635,36 @@ Send
 <pre id="customtoggle_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
 &lt;script&gt;
 function toggle() {
-	var b = $('#tb');
-	if (b.hasClass('toggled')) {
-		b.removeClass('toggled');
-	} else {
-		b.addClass('toggled');
-	}
+  var b = $('#tb');
+  if (b.hasClass('toggled')) {
+    b.removeClass('toggled');
+  } else {
+    b.addClass('toggled');
+  }
 }
 &lt;/script&gt;
-
 &lt;div id="tb"
-		 class="togglebutton"
-		 onclick="toggle()"&gt;
-	Toggle
-&lt;/div&gt;</pre>
+  class="togglebutton"
+  onclick="toggle()"&gt;
+Toggle&lt;/div&gt;</pre>
 
 <pre id="customtoggle_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;script&gt;
 function toggle() {
-	var b = $('#tb');
-	if (b.hasClass('toggled')) {
-		b.removeClass('toggled');
-		b.attr('aria-pressed', false);
-	} else {
-		b.addClass('toggled');
-		b.attr('aria-pressed', true);
-	}
+  var b = $('#tb');
+  if (b.hasClass('toggled')) {
+    b.removeClass('toggled');
+    b.attr('aria-pressed', false);
+  } else {
+    b.addClass('toggled');
+    b.attr('aria-pressed', true);
+  }
 }
 &lt;/script&gt;
 &lt;div id="tb" class="togglebutton"
-	tabindex="0" role="button"
-	onkeypress="onclick()"
-	onclick="toggle()"&gt;
+  tabindex="0" role="toggle"
+  onkeypress="onclick()"
+  onclick="toggle()"&gt;
 Toggle&lt;/div&gt;</pre>
 
 	<div class="livecontent-embed-container" style="">
