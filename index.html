@@ -545,6 +545,11 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 
 	<slide>
+		<aside class="note">
+			<section>
+				Just read this one.
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Accessible HTML5 Overview</h2>
 		</hgroup>
@@ -559,6 +564,14 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 	
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>Years ago it was common to use generic divs and spans for buttons because it was not possible to style buttons the way you want</li>
+					<li>This is not longer true, but the tendancy to use divs still exists</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Use clean HTML and standard tags</h2>
 		</hgroup>
@@ -582,6 +595,14 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 	
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>Focus consists of using tabindex and manually placing focus</li>
+					<li>Here is a primer for using tabindex</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Managing Focus</h2>
 		</hgroup>
@@ -605,27 +626,44 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>Key handlers are key</li>
+					<li>button tags have a native link between onclick and onkeypress for space and enter</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Add key handlers</h2>
 		</hgroup>
 		<article>
 		<p>Custom controls should respond to keys like Enter, Space, Arrows, Escape, etc. as appropriate</p>
 		<pre class="prettyprint" data-lang="html/javascript">
-			&lt;div id="reply_icon"
-					 tabindex="0"
-					 onclick="reply()"
-					 onkeydown="return onReplyKeydown(event)"&gt;Reply&lt;/div&gt;
+  &lt;div id="reply_icon"
+    tabindex="0"
+    onclick="reply()"
+    onkeydown="return onReplyKeydown(event)"&gt;Reply&lt;/div&gt;
 
-			&lt;script&gt;
-				function onReplyKeydown(event) {
-					if (event.keyCode == 32 || event.keyCode == 13)	// Space / Enter
-						reply();
-				}
-			&lt;/script&gt;</pre>
+  &lt;script&gt;
+    function onReplyKeydown(event) {
+      if (event.keyCode == 32 || event.keyCode == 13)	// Space / Enter
+        reply();
+    }
+  &lt;/script&gt;</pre>
 		</article>
 	</slide>
 
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>ARIA is a subset of HTML5</li>
+					<li>It's ONLY function is to communicate information to a screen reader</li>
+					<li>You can set an aria role of button on a div, but it doesn't change the way that div functions in any way, all it does it tell someone using a screen reader the div is a button</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Add ARIA for screen readers</h2>
 		</hgroup>
@@ -646,6 +684,16 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 
 
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>Add tabindex so it can be focusable</li>
+					<li>Add role of button so a SR is alerted that it is a button</li>
+					<li>Add onkeypress to handle keyboard input</li>
+					<li>Note: this usage of onkeypress is just because I don't want to repeat what was on the last page -- we only want to handle space and enter</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Example 1: Custom Button</h2>
 		</hgroup>
@@ -688,6 +736,17 @@ Send
 	</slide>
 
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>Add tabindex so it can be focusable</li>
+					<li>Add role of toggle so a SR is alerted that it is a toggle</li>
+					<li>Add onkeypress to handle keyboard input</li>
+					<li>Add an initial aira-pressed to the html</li>
+					<li>Add dynamic aira-pressed to the javascript</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Example 2: Toggle Button</h2>
 		</hgroup>
@@ -723,6 +782,7 @@ function toggle() {
 }
 &lt;/script&gt;
 &lt;div id="tb" class="togglebutton"
+  aria-pressed=true 
   tabindex="0" role="toggle"
   onkeypress="onclick()"
   onclick="toggle()"&gt;
@@ -748,7 +808,14 @@ Toggle&lt;/div&gt;</pre>
 
 	<slide>
 		<aside class="note">
-			aria-live has 3 levels, polite, assertive, and rude. Polite will not interrupt anything currently being spoken.
+			<section>
+				<ul>
+					<li>Add aria-live="polite"</li>
+					<li>This will read anything within the region when it detects a change to the contents</li>
+					<li>Super-useful for communicating changes</li>
+					<li>aria-live has 3 levels, polite, assertive, and rude. Polite will not interrupt anything currently being spoken.</li>
+				</ul>
+			</section>
 		</aside>
 		<hgroup>
 			<h2>Example 3: Status Indicator</h2>
