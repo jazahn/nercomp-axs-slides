@@ -117,6 +117,7 @@ URL: https://code.google.com/p/io-2012-slides
 			<h1 data-config-title><!-- populated from slide_config.json --></h1>
 			<h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
 			<p data-config-presenter><!-- populated from slide_config.json --></p>
+			<p>When viewing these slides, use 'p' to toggle the presenter notes on each slide for more information.</p>
 		</hgroup>
 	</slide>
 
@@ -131,12 +132,11 @@ URL: https://code.google.com/p/io-2012-slides
 		<aside class="note">
 			<section>
 				<ul>
-					<li>Point I wanted to make #1</li>
-					<li>Point I wanted to make #2</li>
-					<li>Point I wanted to make #3</li>
-					<li>Example <a href="#">link</a> in notes.</li>
+					<li>A year ago I got involved with a best practices group</li>
+					<li>Great opportunity to learn more about this and that</li>
+					<li>Existing accessibility page was all about what handicaps we have to deal with</li>
+					<li>Nothing talked about HOW.</li>
 				</ul>
-				<p><b>Remember to say this tag line!</b></p>
 			</section>
 		</aside>
 		<hgroup>
@@ -165,8 +165,8 @@ Below are some examples of what a colorblind person would see when looking at a 
 			<section>
 				<ul>
 					<li>Has anyone tried reading the WCAG spec?</li>
-					<li>Especially going to it cold.</li>
-					<li>At least Section 508 is more readable.</li>
+					<li>Especially going to it cold -- it is a beast.</li>
+					<li>I moved on to what is actually required, which leads to disability act of 1973</li>
 					<li>People still seem confused when it comes to 508, even with the handy checklist</li>
 					<li>You gotta read it, you gotta understand it</li>
 				</ul>
@@ -193,23 +193,12 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 		</article>
 	</slide>
 
-	<slide>
-		<hgroup>
-			<h2>So What Do I Do?</h2>
-		</hgroup>
-		<article>
-			<ul class="build">
-				<li>Read Section 508
-					<ul>
-						<li>Understand it</li>
-					</ul>
-				</li>
-				<li>Present it to others in a way they can understand</li>
-			</ul>
-		</article>
-	</slide>
-
 	<slide class="segue dark nobackground">
+		<aside class="note">
+			<section>
+				
+			</section>
+		</aside>
 		<hgroup class="auto-fadein">
 			<h2>What am I doing?</h2>
 			<h3></h3>
@@ -596,10 +585,10 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 <pre id="custombutton_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;p&gt;Click on this button:&lt;/p&gt;
 &lt;div class="custombutton" 
-    tabindex="0" role="button" 
-    onkeypress="onclick()"
-    onclick="alert('sent!')"&gt;
-  Send
+  tabindex="0" role="button" 
+  onkeypress="onclick()"
+  onclick="alert('sent!')"&gt;
+Send
 &lt;/div&gt;</pre>
 
 
@@ -876,37 +865,33 @@ Toggle&lt;/div&gt;</pre>
 <pre id="popup_src" class="prettyprint livecontent-src" data-lang="html" contenteditable="true">
 &lt;script&gt;
 function confirm() {
-	$('#modal_dialog').css('display', 'block');
+  $('#modal_dialog').css('display', 'block');
 }
 &lt;/script&gt;
 
-&lt;button onclick="confirm()"&gt;
-	Finish Brown Bag
-&lt;/button&gt;
+&lt;button onclick="confirm()"&gt;Open Modal&lt;/button&gt;
 
 &lt;div id="modal_dialog" class="dialog"&gt;
-	&lt;p&gt;Are you sure you don't want to hear more?&lt;/p&gt;
-	&lt;button id="ok"&gt;End it&lt;/button&gt;
-	&lt;button id="cancel"&gt;Cancel&lt;/button&gt;
+  &lt;p&gt;Are you sure?&lt;/p&gt;
+  &lt;button id="ok"&gt;End it&lt;/button&gt;
+  &lt;button id="cancel"&gt;Cancel&lt;/button&gt;
 &lt;/div&gt;</pre>
 
 <pre id="popup_src2" class="prettyprint livecontent-src" data-lang="html" contenteditable="true" style="display:none">
 &lt;script&gt;
 function confirm() {
-	$('#modal_dialog').css('display', 'block');
-	$('#modal_dialog').focus();
+  $('#modal_dialog').css('display', 'block');
+  $('#modal_dialog').focus();
 }
 &lt;/script&gt;
 
-&lt;button onclick="confirm()"&gt;
-	Finish Brown Bag
-&lt;/button&gt;
+&lt;button onclick="confirm()"&gt;Open Modal&lt;/button&gt;
 
 &lt;div id="modal_dialog" class="dialog"
-	tabindex="-1" role="dialog"&gt;
-	&lt;p&gt;Are you sure you don't want to hear more?&lt;/p&gt;
-	&lt;button id="ok"&gt;End it&lt;/button&gt;
-	&lt;button id="cancel"&gt;Cancel&lt;/button&gt;
+  tabindex="-1" role="dialog"&gt;
+  &lt;p&gt;Are you sure?&lt;/p&gt;
+  &lt;button id="ok"&gt;End it&lt;/button&gt;
+  &lt;button id="cancel"&gt;Cancel&lt;/button&gt;
 &lt;/div&gt;</pre>
 
 	<div class="livecontent-embed-container" style="">
