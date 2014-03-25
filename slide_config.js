@@ -23,7 +23,7 @@ var SLIDE_CONFIG = {
   // Author information
   presenters: [{
     name: 'JaZahn Clevenger',
-    company: 'Sr Software Engineer<br>Academnic Technology',
+    company: 'Sr Software Engineer<br>Academic Technology',
     gplus: '',
     twitter: '@jazahn',
     www: 'http://blogs.law.harvard.edu/acts',
