@@ -415,6 +415,10 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 		<aside class="note">
 			<section>
 				We're going to have to talk about the sections to the Disability Act of 1973.
+				<ul>
+					<li>This Act applies to all government sites AND all organization sites that take government funding</li>
+					<li>That includes pretty much all educational institutions</li>
+				</ul>
 			</section>
 		</aside>
 		<hgroup class="auto-fadein">
@@ -427,7 +431,11 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 		<aside class="note">
 			<section>
 				<ul>
-					<li>The most important of which (to web development)</li>
+					<li>The most important of which (to web development) is 508</li>
+					<li>When I first started looking into this, I thought only about student facing apps, because that's where the mind goes in academia</li>
+					<li>But it applies to everyone, we cannot neglect internal applications (see section 503)</li>
+					<li>People often point to 508 as defunct, or outdated -- I wholey disagree</li>
+					<li>It is a great place to start</li>
 				</ul>
 			</section>
 		</aside>
@@ -454,26 +462,10 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 
 	<slide>
 		<aside class="note">
-			You're not going to get anyone who is an expert in all things accessibility. In order to really get web accessibility, you need to have a reasonably full set of web development skills.
+			<section>
+				I'm going to try going through this in under 2 minutes.
+			</section>
 		</aside>
-		<hgroup>
-			<h2>What about the other sections?</h2>
-			<h3></h3>
-		</hgroup>
-		<article>
-		<ul class="build">
-			<li>Section 503
-				<ul>
-					<li>Employee Discrimination</li>
-				</ul>
-			</li>
-			<li>They already get a lot more attention</li>
-			<li>Everything else is outside scope</li>
-		</ul>
-		</article>
-	</slide>
-	
-	<slide>
 		<hgroup>
 			<h2>Section 508</h2>
 		</hgroup>
@@ -485,28 +477,36 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 			<li>(d) stylesheets</li>
 			<li>(e) image maps!</li>
 			<li>(f) seriously, image maps</li>
-			<li>(g) row/column headers</li>
-			<li>(h) data table cells</li>
+			<li>(g) data table: row/column headers</li>
+			<li>(h) data table: cell scope</li>
 		</ul>
 		</article>
 	</slide>
 
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>text only is a throwback to flash "black boxes", technology has caught up.</li>
+					<li>We have an app for placement exams, a timed test. </li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Section 508</h2>
 		</hgroup>
 		<article>
 		<ul class="build">
-			<li>(i) frames</li>
-			<li>(j) blinking</li>
+			<li>(i) frame title</li>
+			<li>(j) blinking bad</li>
 			<li>(k) text only page
 				<ul>
-					<li>most misunderstood</li>
+					<li>most misunderstood, please don't use</li>
 				</ul>
 			</li>
 			<li>(l) scripts</li>
-			<li>(m) required plugins</li>
-			<li>(n) form elements</li>
+			<li>(m) required plugins, downloads</li>
+			<li>(n) form element labels</li>
 			<li>(o) skipping navigation</li>
 			<li>(p) timing</li>
 		</ul>
@@ -515,10 +515,12 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	
 	<slide>
 		<aside class="note">
-			<ul>
-				<li>Section 508 is under review / rewrite / update.</li>
-				<li>It is expected that this will end up with 508 resembling WCAG 2.0 AA</li>
-			</ul>
+			<section>
+				<ul>
+					<li>Section 508 is currently under review / rewrite / update.</li>
+					<li>It is expected that this will end up with 508 resembling WCAG 2.0 AA</li>
+				</ul>
+			</section>
 		</aside>
 		<hgroup>
 			<h2>The Future</h2>
@@ -532,6 +534,11 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 
 	<slide class="segue dark nobackground">
+		<aside class="note">
+			<section>
+				Now for the coding part.
+			</section>
+		</aside>
 		<hgroup class="auto-fadein">
 			<h2>Coding accessible HTML5</h2>
 		</hgroup>
