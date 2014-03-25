@@ -196,7 +196,7 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	<slide class="segue dark nobackground">
 		<aside class="note">
 			<section>
-				
+				What follows is the majority of a training session I've given internally.
 			</section>
 		</aside>
 		<hgroup class="auto-fadein">
@@ -206,6 +206,16 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>Turn on ChromeVox</li>
+					<li>Show how someone with a screenreader would navigate the page.</li>
+					<li>Pay attention to the image, it reads the filename of the image because there is no <code>alt</code></li>
+					<li>Make point that even without any accessibiltiy measures taken, a simple app like this is still "mostly" usable with assistive technology</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>Accessibility for the static web</h2>
 			<h3>Doing Nothing</h3>
@@ -262,10 +272,20 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 	
 	<slide>
-			<hgroup>
-				<h2>Accessibility for the static web</h2>
-		<h3>Doing Something</h3>
-			</hgroup>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>Continue with ChromeVox</li>
+					<li>Show how the <code>label</code> is read when focus is on the input</li>
+					<li>Show how the image is described -- in detail</li>
+					<li>It's a better experience</li>
+				</ul>
+			</section>
+		</aside>
+		<hgroup>
+			<h2>Accessibility for the static web</h2>
+			<h3>Doing Something</h3>
+		</hgroup>
 		<article>
 					<style>
 						input {
@@ -318,6 +338,13 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 	
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>If this is as complicated as your apps get, you're done!</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>What did we have to do?</h2>
 		</hgroup>
@@ -332,6 +359,20 @@ Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, eith
 	</slide>
 
 	<slide>
+		<aside class="note">
+			<section>
+				<ul>
+					<li>BUT we typically make more complex apps</li>
+					<li>Show how this is used WITHOUT ChromeVox</li>
+					<li>It's a good experience</li>
+					<li>Now with ChromeVox</li>
+					<li>Pay attention to the loss of focus when the selection is made.</li>
+					<li>No way to know a modal was opened, though it does exist on the DOM</li>
+					<li>Maybe it could be inferred from the text that it's a rating gadget, but the star gadget can't be accessed by keyboard</li>
+					<li>When a response is saved, and the modal closed, nothing is said</li>
+				</ul>
+			</section>
+		</aside>
 		<hgroup>
 			<h2>HTML5: A bad accessible experience</h2>
 		</hgroup>
